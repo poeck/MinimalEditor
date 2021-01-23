@@ -1,11 +1,12 @@
 {
   "name": "minimal",
   "version": "1.0.0",
-  "description": "",
+  "description": "Minimal Editor",
   "main": "app.js",
   "scripts": {
     "dev": "electron .",
-    "build": "electron-builder --win"
+    "build": "electron-builder --win",
+    "deploy": "electron-builder build --win --publish always"
   },
   "author": "",
   "license": "ISC",
