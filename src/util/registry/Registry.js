@@ -12,9 +12,9 @@ module.exports = {
     // Check if registered
     if (Store.get("registered") == undefined) {
       if (isPackaged) {
-        iconPath = path.join(process.resourcesPath, "assets", "small.ico");
+        iconPath = path.join(process.resourcesPath, "assets", "mid.ico");
       } else {
-        iconPath = path.join(app.getAppPath(), "assets", "small.ico");
+        iconPath = path.join(app.getAppPath(), "assets", "mid.ico");
       }
 
       registerExtensions();
