@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editor</title>
+    <script src="../assets/CodeMirror/lib/codemirror.js"></script>
+    <script src="../assets/CodeMirror/mode/meta.js"></script>
+    <link rel="stylesheet" href="../assets/CodeMirror/lib/codemirror.css" />
+    <!-- Addons -->
+    <script src="../assets/CodeMirror/addon/scroll/simplescrollbars.js"></script>
+    <script src="../assets/CodeMirror/addon/search/searchcursor.js"></script>
+    <script src="../assets/CodeMirror/addon/search/search.js"></script>
+    <script src="../assets/CodeMirror/addon/search/jump-to-line.js"></script>
+    <script src="../assets/CodeMirror/addon/dialog/dialog.js"></script>
+    <script src="../assets/CodeMirror/addon/edit/matchbrackets.js"></script>
+    <script src="../assets/CodeMirror/addon/edit/closebrackets.js"></script>
+    <script src="../assets/CodeMirror/addon/comment/comment.js"></script>
+    <script src="../assets/CodeMirror/addon/wrap/hardwrap.js"></script>
+    <script src="../assets/CodeMirror/addon/fold/foldcode.js"></script>
+    <script src="../assets/CodeMirror/addon/fold/brace-fold.js"></script>
+    <script
+      type="text/javascript"
+      src="../assets/CodeMirror/mode/xml/xml.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="../assets/CodeMirror/addon/scroll/simplescrollbars.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/CodeMirror/addon/dialog/dialog.css"
+    />
+    <!-- Themes -->
+    <link rel="stylesheet" href="../assets/CodeMirror/theme/minimal.css" />
+    <!-- Other -->
+    <link rel="stylesheet" href="./style/editor.css" />
+  </head>
+  <body>
+    <div id="bar">
+      <div class="left">
+        <div class="circle exit" id="exit"></div>
+        <div class="circle minimize" id="minimize"></div>
+        <div class="circle window" id="window"></div>
+      </div>
+      <div class="center">
+        <p class="title" id="barTitle">Untitled</p>
+      </div>
+      <div class="right">
+        <div id="save" class="icon"><img src="./assets/save.svg" /></div>
+        <div id="open" class="icon"><img src="./assets/open.svg" /></div>
+      </div>
+    </div>
+    <!--  <div id="draggable"></div> -->
+    <div id="editor"></div>
+  </body>
+  <script src="./scripts/editor.js"></script>
+  <script src="./scripts/buttons.js"></script>
+  <script src="./scripts/app.js"></script>
+</html>

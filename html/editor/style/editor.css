@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+@font-face {
+  font-family: "Consolas";
+  src: url("../../assets/Consolas.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bar-size: 50px;
+  --editor-font-size: 20px;
+
+  --dot-size: 17px;
+
+  --bar-side-color: #282c34;
+  --bar-mid-color: #282c34;
+
+  --editor-padding-x: 10px;
+  --editor-padding-y: 10px;
+}
+
+body {
+  overflow-x: hidden;
+  color: black;
+  font-family: "Consolas";
+}
+
+#editor {
+  overflow-x: hidden;
+  width: 100%;
+  height: calc(100vh - var(--bar-size));
+}
+
+.CodeMirror {
+  padding: var(--editor-padding-y) var(--editor-padding-x);
+  height: calc(100vh - var(--bar-size) - 2 * var(--editor-padding-y));
+  font-family: "Consolas";
+  font-size: var(--editor-font-size);
+}
+
+#bar {
+  z-index: 2;
+  width: 100%;
+  height: var(--bar-size);
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#draggable {
+  z-index: -1;
+  width: 60vh;
+  left: 50%;
+  transform: translateX(-50%);
+  height: var(--bar-size);
+  -webkit-app-region: drag;
+  background: red;
+  position: absolute;
+  top: 0;
+}
+
+#bar .left {
+  height: 100%;
+  padding: 0px 20px;
+  display: flex;
+  column-gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bar-side-color);
+}
+
+#bar .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: var(--bar-mid-color);
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+}
+
+#bar .center .title {
+  color: #abb2bf;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+#bar .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bar-side-color);
+  height: 100%;
+  padding: 0px 20px;
+  column-gap: 10px;
+}
+
+.icon {
+  height: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px;
+}
+
+.icon img {
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  transition: all 0.1s ease;
+}
+
+.icon img:hover {
+  opacity: 0.8;
+}
+
+.circle {
+  z-index: 2;
+  height: var(--dot-size);
+  width: var(--dot-size);
+  border-radius: 50%;
+}
+
+.exit {
+  background: #d95763;
+}
+
+.window {
+  background: #6abe30;
+}
+
+.minimize {
+  background: #ff9a26;
+}

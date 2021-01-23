@@ -1,0 +1,37 @@
+{
+  "name": "minimal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "electron .",
+    "build": "electron-builder --win"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^11.2.0"
+  },
+  "dependencies": {
+    "electron-is-packaged": "^1.0.2",
+    "electron-regedit": "^2.0.0",
+    "electron-reload": "^1.5.0",
+    "node-storage": "0.0.9"
+  },
+  "build": {
+    "productName": "Minimal",
+    "appId": "com.paulkoeck.minimal",
+    "win": {
+      "icon": "assets/big.ico"
+    },
+    "extraResources": [
+      {
+        "from": "./assets/",
+        "to": "assets",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ]
+  }
+}
