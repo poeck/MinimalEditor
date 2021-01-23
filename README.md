@@ -10,7 +10,7 @@ A minimalistic Code Editor
 
 ## Installation
 
-You can download the installer [here](../../releases/)
+You can download the installer [here!](../../releases/)
 
 ## Badges
 
