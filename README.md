@@ -6,11 +6,11 @@ A minimalistic Code Editor
 
 ## Example
 
-![alt example](../example.png?raw=true)
+![alt example](../../example.png?raw=true)
 
 ## Installation
 
-You can download the installer [here](../releases/)
+You can download the installer [here](../../releases/)
 
 ## Badges
 
