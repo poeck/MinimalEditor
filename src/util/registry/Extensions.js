@@ -1,1 +1,1 @@
-module.exports = ["txt", "cs", "js", "py"];
+module.exports = ["txt", "cs", "js", "py", "yml"];
