@@ -1,4 +1,4 @@
-# Minimal
+# Minimal Editor
 
 A minimalistic Code Editor
 
