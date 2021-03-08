@@ -6,7 +6,7 @@ A minimalistic Code Editor
 
 ## Example
 
-![alt example](https://github.com/paulkoeckdev/Minimal/blob/main/example.png?raw=true)
+![alt example](https://github.com/paulkoeckdev/MinimalEditor/blob/main/example.png?raw=true)
 
 ## Installation
 
